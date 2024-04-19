@@ -1,4 +1,5 @@
 AWS Resource Tracker
+
 Welcome to the AWS Resource Tracker project! This project uses shell scripting and the AWS CLI to track and monitor various AWS resources such as EC2 instances, S3 buckets, AWS Lambda functions, and IAM users.
 
 Table of Contents
