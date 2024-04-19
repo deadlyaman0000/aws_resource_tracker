@@ -43,10 +43,7 @@ Basic understanding of AWS services such as EC2, S3, Lambda, and IAM.
 Each script is designed to track a specific AWS resource. To run a script, simply execute it from the terminal:
 bash
 Copy code
-./track-ec2.sh      # Track EC2 instances
-./track-s3.sh       # Track S3 buckets
-./track-lambda.sh   # Track Lambda functions
-./track-iam.sh      # Track IAM users
+./aws_resouce_tracker.sh
 
 -- Reviewing the output:
 The scripts will display the tracked information in the terminal.
