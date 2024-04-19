@@ -21,7 +21,7 @@ echo "Printing list of s3 buckets"
 aws s3 ls
 
 # List EC2 instances
-echo "Printing list of EC2 instances"
+echo "Printing list of EC2 instances Id "
 aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId'
 
 # List aws Lambda functions
