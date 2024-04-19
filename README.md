@@ -35,6 +35,8 @@ Basic understanding of AWS services such as EC2, S3, Lambda, and IAM.
   bash
   Copy code
   cd aws-resource-tracker
+-Give it exicute permission
+
 3. Ensure AWS CLI is installed and configured:
   If you haven't already, install and configure the AWS CLI with your AWS credentials.
   
