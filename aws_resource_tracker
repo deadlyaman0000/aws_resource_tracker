@@ -1,0 +1,34 @@
+!/bin/bash
+
+#############################
+# Author: Aman Chandravanshi
+# Date: 19-04-2024
+#
+# Version: v1
+# This script will repost aws resource usage 
+#############################
+
+# AWS S3
+# AWS EC2
+# AWS Lambda
+# AWS IAM user
+
+set -x #debug mode
+set -eo pipefail
+
+# List s3  buckets
+echo "Printing list of s3 buckets"
+aws s3 ls
+
+# List EC2 instances
+echo "Printing list of EC2 instances"
+aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId'
+
+# List aws Lambda functions
+echo "Printing list of aws Lambda functions"
+aws lambda list-functions
+
+# List IAM user
+echo "Printing list of IAM users"
+aws iam list-users
+
